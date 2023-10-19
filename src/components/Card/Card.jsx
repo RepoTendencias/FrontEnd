@@ -20,10 +20,10 @@ export function Card(){
                         <option value="PUT"> Put</option>
                         <option value="DELETE"> Delete</option>
                     </select>
-                    {selectedOption === 'GET' && <Get/>}
-                    {selectedOption === 'POST' && <Post/>}
-                    {selectedOption === 'PUT' && <Put/>}
-                    {selectedOption === 'DELETE' && <Delete/>}
+                    {selectedOption === 'GET' && <Get className={`Get ${selectedOption === 'GET' ? 'show' : ''}`} />}
+                    {selectedOption === 'POST' && <Post className={`Post ${selectedOption === 'POST' ? 'show' : ''}`} />}
+                    {selectedOption === 'PUT' && <Put className={`Put ${selectedOption === 'PUT' ? 'show' : ''}`} />}
+                    {selectedOption === 'DELETE' && <Delete className={`Delete ${selectedOption === 'DELETE' ? 'show' : ''}`} />}
                 </div>
             </div>
         );
