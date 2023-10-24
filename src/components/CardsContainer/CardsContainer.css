@@ -1,0 +1,35 @@
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    padding-bottom: 20px; /* Espacio en la parte inferior para permitir desplazamiento */
+  }
+  
+  /* Estilos para el contenedor de componentes */
+  .componentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%; /* Establecer un ancho máximo para las tarjetas, evitando que se deformen */
+  }
+  
+  /* Estilos para el botón circular */
+  .circular-button {
+    width: 50px; 
+    height: 50px; 
+    background-color: #fff; 
+    border: 2px solid #2196F3;
+    border-radius: 50%; 
+    color: #2196F3; 
+    font-size: 24px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px;
+  }
+  
+  .circular-button:hover {
+    transform: scale(1.1);
+  }
+  

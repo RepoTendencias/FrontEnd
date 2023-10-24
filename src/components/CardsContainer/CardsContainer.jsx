@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CardsContainer.css';
 import { Card } from '../Card/Card';
 
 function CardsContainer() {
@@ -11,11 +12,13 @@ function CardsContainer() {
   };
 
   return (
-    <div>
-      <button onClick={agregarComponente}>Agregar Componente</button>
-      {componentes.map((componente, index) => (
-        <div key={index}>{componente}</div>
-      ))}
+    <div className="container">
+      <div className="componentes">
+        {componentes.map((componente, index) => (
+          <div key={index}>{componente}</div>
+        ))}
+      </div>
+      <button className="circular-button" onClick={agregarComponente}>+</button>
     </div>
   );
 }

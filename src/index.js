@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Navbar } from './components/Navbar/Navbar';
 import CardsContainer from './components/CardsContainer/CardsContainer';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>

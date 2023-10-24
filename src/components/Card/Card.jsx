@@ -7,7 +7,7 @@ import { Post } from "../Post/Post";
 import { useState } from "react";
 
 export function Card(){
-    const [selectedOption, setSeledOption] = useState('opcionInicial')
+    const [selectedOption, setSeledOption] = useState('GET')
     const handleSelectChange=(event)=>{
         setSeledOption(event.target.value);
     }
