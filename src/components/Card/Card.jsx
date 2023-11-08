@@ -6,7 +6,7 @@ import { Delete } from "../Delete/Delete";
 import { Post } from "../Post/Post";
 import { useState } from "react";
 
-export function Card(){
+export function Card({id}){
     const [selectedOption, setSeledOption] = useState('GET')
     const handleSelectChange=(event)=>{
         setSeledOption(event.target.value);
@@ -14,16 +14,17 @@ export function Card(){
         return(
             <div className="card"> 
                 <div className="card-content">
+                    
                     <select name={selectedOption} onChange={handleSelectChange}>
                         <option value="GET"> Get</option>
                         <option value="POST"> Post</option>
                         <option value="PUT"> Put</option>
                         <option value="DELETE"> Delete</option>
                     </select>
-                    {selectedOption === 'GET' && <Get className={`Get ${selectedOption === 'GET' ? 'show' : ''}`} />}
-                    {selectedOption === 'POST' && <Post className={`Post ${selectedOption === 'POST' ? 'show' : ''}`} />}
-                    {selectedOption === 'PUT' && <Put className={`Put ${selectedOption === 'PUT' ? 'show' : ''}`} />}
-                    {selectedOption === 'DELETE' && <Delete className={`Delete ${selectedOption === 'DELETE' ? 'show' : ''}`} />}
+                    {selectedOption === 'GET' && <Get id={id} className={`Get ${selectedOption === 'GET' ? 'show' : ''}`} />}
+                    {selectedOption === 'POST' && <Post id={id} className={`Post ${selectedOption === 'POST' ? 'show' : ''}`} />}
+                    {selectedOption === 'PUT' && <Put id={id} className={`Put ${selectedOption === 'PUT' ? 'show' : ''}`} />}
+                    {selectedOption === 'DELETE' && <Delete id={id} className={`Delete ${selectedOption === 'DELETE' ? 'show' : ''}`} />}
                 </div>
             </div>
         );

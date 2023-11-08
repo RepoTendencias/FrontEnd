@@ -1,15 +1,36 @@
-import React from "react";
-
-export function Delete(){
-
-    return(
-        <div>
-            <input id="description" placeholder="Descripción"/>
-            <input id="ID" placeholder="ID"/>
-            <input type="checkbox" name="response1" value = "400"/>400
-            <input type="checkbox" name="response2" value = "202"/>202
-            <input type="checkbox" name="response2" value = "404"/>404
+import React, { useState } from "react";
+import './Delete.css'
+export function Delete({ id }) {
+    const [response, setResponse] = useState("")
+    const idProp = id
+    return (
+        <div className="Delete">
+            <div className="desc">
+                <h3>Descripción</h3>
+                <input id="description" placeholder="Descripción" className="delete_descripcion" />
+                <h3>ID</h3>
+                <input id="ID" placeholder="ID" className="delete_id"/>
+                <input type="hidden" className="delete_response" value={response} />
+            </div>
+            <div className="responses">
+                <div className="respuestas">
+                    <h3>Respuestas</h3>
+                    <div className="borde_respuesta">
+                        <div className="item-respuesta">
+                            <input type="radio" name={`response${idProp}`} id={`response1_${idProp}`} value="400" onChange={(e) => { if (e.target.checked) { setResponse("400") } }} />
+                            <label htmlFor={`response1_${idProp}`} >400</label>
+                        </div>
+                        <div className="item-respuesta">
+                            <input type="radio" name={`response${idProp}`} id={`response2_${idProp}`} value="200" onChange={(e) => { if (e.target.checked) { setResponse("200") } }} />
+                            <label htmlFor={`response2_${idProp}`} >200</label>
+                        </div>
+                        <div className="item-respuesta">
+                            <input type="radio" name={`response${idProp}`} id={`response3_${idProp}`} value="404" onChange={(e) => { if (e.target.checked) { setResponse("404") } }} />
+                            <label htmlFor={`response3_${idProp}`}>404</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     );
 }

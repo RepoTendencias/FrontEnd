@@ -4,49 +4,49 @@
   width: 100%;
   height: 100%;
   color: darkslategray;
- }
- 
- .desc {
+}
+
+.Get .desc {
   width: 90%;
   padding-left: 20px;
   padding-right: 20px;
- }
- 
- .desc input {
+}
+
+.Get .desc input {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
- }
- 
- .responses {
+}
+
+.Get .responses {
   width: 100%;
   padding: 20px;
   display: flex;
- }
+}
 
- .responses div {
+.Get .responses div {
   width: 75%;
   margin-bottom: 20px;
- }
- 
- .responses textarea {
+}
+
+.Get .responses textarea {
   width: 96%;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
- }
+}
 
- .item-respuesta label{
+.Get .item-respuesta label {
   margin-left: 10px;
   font-size: 16px;
   font-weight: 600;
   width: 20px;
   height: 20px;
   cursor: pointer;
- }
- 
- .borde_respuesta{
+}
+
+.Get .borde_respuesta {
   border: 1px solid #ccc;
   border-radius: 5px;
- }
+}

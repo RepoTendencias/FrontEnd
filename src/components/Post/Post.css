@@ -1,0 +1,62 @@
+.Post {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    color: darkslategray;
+  }
+  
+  .Post .desc {
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    padding-right: 20px;
+  }
+  
+  .Post .desc input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .Post .desc textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    padding-left: 20px;
+  }
+  
+  .Post .responses {
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+    }
+  .Post .responses div {
+    width: 100%;
+  }
+  
+  .Post .item-respuesta label {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .Post .borde_respuesta {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+  }
+  
+  .Post .item-respuesta {
+    margin: 10px 0px 10px 50px;
+  }
+
+  

@@ -1,0 +1,56 @@
+.Delete {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    color: darkslategray;
+  }
+  
+  .Delete .desc {
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    padding-right: 20px;
+  }
+  
+  .Delete .desc input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  
+  .Delete .responses {
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+    }
+    
+  .Delete .responses div {
+    width: 100%;
+  }
+  
+  .Delete .item-respuesta label {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .Delete .borde_respuesta {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+  }
+  
+  .Delete .item-respuesta {
+    margin: 10px 0px 10px 50px;
+  }
+
+  
