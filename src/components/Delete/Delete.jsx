@@ -6,6 +6,8 @@ export function Delete({ id }) {
     return (
         <div className="Delete">
             <div className="desc">
+                <h3>URL</h3>
+                <input id="delete_url" placeholder="url" className="delete_url"/>
                 <h3>Descripción</h3>
                 <input id="description" placeholder="Descripción" className="delete_descripcion" />
                 <h3>ID</h3>

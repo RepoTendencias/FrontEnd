@@ -17,33 +17,36 @@ function CardsContainer() {
     const post_descripcion = document.querySelectorAll(".post_descripcion");
     const post_body = document.querySelectorAll(".post_body");
     const post_response = document.querySelectorAll(".post_response");
+    const post_url = document.querySelectorAll(".post_url");
     let post = []
     for (let i = 0; i < post_descripcion.length; i++) {
-      post.push({descripcion: post_descripcion[i].value, body: post_body[i].value, response: post_response[i].value})
+      post.push({url: post_url[i].value, descripcion: post_descripcion[i].value, body: post_body[i].value, response: post_response[i].value})
     }
 
+    const get_url = document.querySelectorAll(".get_url");  
     const get_descripcion = document.querySelectorAll(".get_descripcion");
     const get_body = document.querySelectorAll(".get_body");
     const get_response = document.querySelectorAll(".get_response");
     let get = []
     for (let i = 0; i < get_descripcion.length; i++) {
-      get.push({descripcion: get_descripcion[i].value, body: get_body[i].value, response: get_response[i].value})
+      get.push({url: get_url[i].value, descripcion: get_descripcion[i].value, body: get_body[i].value, response: get_response[i].value})
     }
-
+    const put_url = document.querySelectorAll(".put_url");
     const put_descripcion = document.querySelectorAll(".put_descripcion");
     const put_body = document.querySelectorAll(".put_body");
     const put_response = document.querySelectorAll(".put_response");
     let put = []
     for (let i = 0; i < put_descripcion.length; i++) {
-      put.push({descripcion: put_descripcion[i].value, body: put_body[i].value, response: put_response[i].value})
+      put.push({url: post_url[i].value, descripcion: put_descripcion[i].value, body: put_body[i].value, response: put_response[i].value})
     }
 
+    const delete_url = document.querySelectorAll(".delete_url");
     const delete_descripcion = document.querySelectorAll(".delete_descripcion");
     const delete_id = document.querySelectorAll(".delete_id");
     const delete_response = document.querySelectorAll(".delete_response");
     let delete_arr = []
     for (let i = 0; i < delete_descripcion.length; i++) {
-      delete_arr.push({descripcion: delete_descripcion[i].value, id: delete_id[i].value, response: delete_response[i].value})
+      delete_arr.push({url: delete_url[i].value, descripcion: delete_descripcion[i].value, id: delete_id[i].value, response: delete_response[i].value})
     }
 
     const dataEnviar = {post: post, get: get, put: put, delete: delete_arr}

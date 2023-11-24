@@ -7,6 +7,8 @@ export function Post({id}) {
     return (
         <div className="Post">
             <div className="desc">
+                <h3>URL</h3>
+                <input id="post_url" placeholder="url" className="post_url"/>
                 <h3>Descripción</h3>
                 <input id="description" className="post_descripcion" placeholder="Descripción" />
                 <h3>Request Body</h3>

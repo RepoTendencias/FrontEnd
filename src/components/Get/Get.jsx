@@ -6,6 +6,8 @@ export function Get({ id }) {
   return (
     <div className="Get">
       <div className="desc">
+        <h3>URL</h3>
+        <input id="get_url" placeholder="url" className="get_url"/>
         <h3>Descripción</h3>
         <input id="description" placeholder="Descripción" className="get_descripcion" />
         <input type="hidden" className="get_response" value={response} />

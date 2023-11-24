@@ -6,6 +6,8 @@ export function Put({ id }) {
     return (
         <div className="Put">
             <div className="desc">
+                <h3>URL</h3>
+                <input id="put_url" placeholder="url" className="put_url"/>
                 <h3>Descripción</h3>
                 <input id="description" placeholder="Descripción" className="put_descripcion" />
                 <h3>Request Body</h3>
