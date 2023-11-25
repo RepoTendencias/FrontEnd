@@ -37,7 +37,7 @@ function CardsContainer() {
     const put_response = document.querySelectorAll(".put_response");
     let put = []
     for (let i = 0; i < put_descripcion.length; i++) {
-      put.push({url: post_url[i].value, descripcion: put_descripcion[i].value, body: put_body[i].value, response: put_response[i].value})
+      put.push({url: put_url[i].value, descripcion: put_descripcion[i].value, body: put_body[i].value, response: put_response[i].value})
     }
 
     const delete_url = document.querySelectorAll(".delete_url");
