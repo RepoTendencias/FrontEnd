@@ -26,10 +26,14 @@ function CardsContainer() {
     const get_url = document.querySelectorAll(".get_url");  
     const get_descripcion = document.querySelectorAll(".get_descripcion");
     const get_body = document.querySelectorAll(".get_body");
-    const get_response = document.querySelectorAll(".get_response");
+    const get_response1 = document.querySelectorAll(".get_response1");
+    const get_response2 = document.querySelectorAll(".get_response2");
+    const get_response3 = document.querySelectorAll(".get_response3");
+    const get_descripcion400 = document.querySelectorAll(".get_descripcion_400");
+    const get_descripcion404 = document.querySelectorAll(".get_descripcion_404");
     let get = []
     for (let i = 0; i < get_descripcion.length; i++) {
-      get.push({url: get_url[i].value, descripcion: get_descripcion[i].value, body: get_body[i].value, response: get_response[i].value})
+      get.push({url: get_url[i].value, descripcion: get_descripcion[i].value, body: get_body[i].value, response: get_response1[i].value, response2: get_response2[i].value, response3: get_response3[i].value, desc400: get_descripcion400[i].value, desc404: get_descripcion404[i].value})
     }
     const put_url = document.querySelectorAll(".put_url");
     const put_descripcion = document.querySelectorAll(".put_descripcion");
