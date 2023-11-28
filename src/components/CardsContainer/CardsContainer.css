@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center; /* Centrar horizontalmente */
     padding-bottom: 20px; /* Espacio en la parte inferior para permitir desplazamiento */
+    padding-top: 20px; /* Espacio en la parte inferior para permitir desplazamiento */
   }
   
   /* Estilos para el contenedor de componentes */
